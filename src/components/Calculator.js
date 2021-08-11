@@ -5,100 +5,100 @@ class Calculator extends React.Component {
   render() {
     return (
       <div className="grid-container">
-        <div id="input-number">
+        <div className="input-number">
           <input type="text" />
         </div>
-        <div id="ac">
+        <div className="ac">
           <button type="button" className="grey-btn">
             AC
           </button>
         </div>
-        <div id="plus-less">
+        <div className="plus-less">
           <button type="button" className="grey-btn">
             +/-
           </button>
         </div>
-        <div id="percentage">
+        <div className="percentage">
           <button type="button" className="grey-btn">
             %
           </button>
         </div>
-        <div id="division">
+        <div className="division">
           <button type="button" className="orange-btn">
             ÷
           </button>
         </div>
-        <div id="seven">
+        <div className="seven">
           <button type="button" className="grey-btn">
             7
           </button>
         </div>
-        <div id="eight">
+        <div className="eight">
           <button type="button" className="grey-btn">
             8
           </button>
         </div>
-        <div id="nine">
+        <div className="nine">
           <button type="button" className="grey-btn">
             9
           </button>
         </div>
-        <div id="by">
+        <div className="by">
           <button type="button" className="orange-btn">
             x
           </button>
         </div>
-        <div id="four">
+        <div className="four">
           <button type="button" className="grey-btn">
             4
           </button>
         </div>
-        <div id="five">
+        <div className="five">
           <button type="button" className="grey-btn">
             5
           </button>
         </div>
-        <div id="six">
+        <div className="six">
           <button type="button" className="grey-btn">
             6
           </button>
         </div>
-        <div id="less">
+        <div className="less">
           <button type="button" className="orange-btn">
             -
           </button>
         </div>
-        <div id="one">
+        <div className="one">
           <button type="button" className="grey-btn">
             1
           </button>
         </div>
-        <div id="two">
+        <div className="two">
           <button type="button" className="grey-btn">
             2
           </button>
         </div>
-        <div id="three">
+        <div className="three">
           <button type="button" className="grey-btn">
             3
           </button>
         </div>
-        <div id="plus">
+        <div className="plus">
           <button type="button" className="orange-btn">
             +
           </button>
         </div>
-        <div id="zero">
+        <div className="zero">
           <button type="button" className="grey-btn">
             0
           </button>
         </div>
-        <div id="dot">
+        <div className="dot">
           <button type="button" className="grey-btn">
             .
           </button>
         </div>
-        <div id="equal">
+        <div className="equal">
           <button type="button" className="orange-btn">
             =
           </button>

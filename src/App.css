@@ -5,7 +5,7 @@
   font-size: 0.9rem;
 }
 
-#input-number {
+.input-number {
   grid-area: input-number;
 }
 
@@ -25,75 +25,75 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#ac {
+.ac {
   grid-area: ac;
 }
 
-#percentage {
+.percentage {
   grid-area: percentage;
 }
 
-#division {
+.division {
   grid-area: division;
 }
 
-#seven {
+.seven {
   grid-area: seven;
 }
 
-#eight {
+.eight {
   grid-area: eight;
 }
 
-#nine {
+.nine {
   grid-area: nine;
 }
 
-#by {
+.by {
   grid-area: by;
 }
 
-#four {
+.four {
   grid-area: four;
 }
 
-#five {
+.five {
   grid-area: five;
 }
 
-#six {
+.six {
   grid-area: six;
 }
 
-#less {
+.less {
   grid-area: less;
 }
 
-#one {
+.one {
   grid-area: one;
 }
 
-#two {
+.two {
   grid-area: two;
 }
 
-#three {
+.three {
   grid-area: three;
 }
 
-#plus {
+.plus {
   grid-area: plus;
 }
 
-#zero {
+.zero {
   grid-area: zero;
 }
 
-#dot {
+.dot {
   grid-area: dot;
 }
 
-#equal {
+.equal {
   grid-area: equal;
 }
 
