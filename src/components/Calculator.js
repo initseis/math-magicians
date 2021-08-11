@@ -12,13 +12,13 @@ class Calculator extends React.Component {
     };
   }
 
-  handleButton = (event) => {
+  handleButton(event) {
     const obj = calculate(this.state, event.target.innerText);
     this.setState(obj);
     if (obj.total === null && obj.next === null && obj.operation === null) {
       document.querySelector('input').value = '';
     }
-  };
+  }
 
   render() {
     const { total, next } = this.state;
