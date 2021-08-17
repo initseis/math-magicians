@@ -29,20 +29,26 @@ export default function calculate(obj, buttonName) {
     // If there is an operation, update next
     if (obj.operation) {
       if (obj.next) {
-        return { next: obj.next + buttonName };
+        return {
+          total: obj.total,
+          next: obj.next + buttonName,
+          operation: obj.operation,
+        };
       }
-      return { next: buttonName };
+      return { total: obj.total, next: buttonName, operation: obj.operation };
     }
     // If there is no operation, update next and clear the value
     if (obj.next) {
       return {
-        next: obj.next + buttonName,
         total: '',
+        next: obj.next + buttonName,
+        operation: obj.operation,
       };
     }
     return {
-      next: buttonName,
       total: '',
+      next: buttonName,
+      operation: obj.operation,
     };
   }
 
@@ -51,16 +57,24 @@ export default function calculate(obj, buttonName) {
       if (obj.next.includes('.')) {
         return {};
       }
-      return { next: `${obj.next}.` };
+      return {
+        total: obj.total,
+        next: `${obj.next}.`,
+        operation: obj.operation,
+      };
     }
     if (obj.operation) {
-      return { next: '0.' };
+      return { total: obj.total, next: '0.', operation: obj.operation };
     }
     if (obj.total) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: `${obj.total}.` };
+      return {
+        total: `${obj.total}.`,
+        next: obj.next,
+        operation: obj.operation,
+      };
     }
     return { total: '0.' };
   }
@@ -86,10 +100,18 @@ export default function calculate(obj, buttonName) {
 
   if (buttonName === '+/-') {
     if (obj.next) {
-      return { next: (-1 * parseFloat(obj.next)).toString() };
+      return {
+        total: obj.total,
+        next: (-1 * parseFloat(obj.next)).toString(),
+        operation: obj.operation,
+      };
     }
     if (obj.total) {
-      return { total: (-1 * parseFloat(obj.total)).toString() };
+      return {
+        total: (-1 * parseFloat(obj.total)).toString(),
+        next: obj.next,
+        operation: obj.operation,
+      };
     }
     return {};
   }
@@ -115,7 +137,7 @@ export default function calculate(obj, buttonName) {
 
   // The user hasn't typed a number yet, just save the operation
   if (!obj.next) {
-    return { operation: buttonName };
+    return { total: obj.total, next: obj.next, operation: buttonName };
   }
 
   // save the operation and shift 'next' into 'total'
