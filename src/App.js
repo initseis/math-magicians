@@ -10,8 +10,11 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="container">
           <nav>
+            <Link className="logo" to="/">
+              Math Magicians
+            </Link>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -27,13 +30,13 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path="/">
-              <Home />;
+              <Home />
             </Route>
             <Route path="/calculator">
-              <Calculator />;
+              <Calculator />
             </Route>
             <Route path="/quote">
-              <Quote />;
+              <Quote />
             </Route>
           </Switch>
         </div>

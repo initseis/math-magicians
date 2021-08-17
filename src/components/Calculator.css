@@ -1,8 +1,18 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem;
+.calculatorWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calculatorText {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #858694;
 }
 
 .input-number {
@@ -107,10 +117,9 @@ input::-webkit-inner-spin-button {
     "one two three plus"
     "zero zero dot equal";
   background-color: #bababa;
-  width: 300px;
-  height: 250px;
+  width: 600px;
+  height: 290px;
   gap: 2px;
-  margin: 200px auto auto auto;
 }
 
 button {
