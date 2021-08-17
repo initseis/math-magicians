@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import calculate from "../logic/calculate";
-import operate from "../logic/operate";
-import "./Calculator.css";
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+import operate from '../logic/operate';
+import './Calculator.css';
 
 const Calculator = () => {
   const [state, setState] = useState({
-    total: "",
+    total: '',
     next: null,
     operation: null,
   });
@@ -14,18 +14,18 @@ const Calculator = () => {
   const handleButton = (event) => {
     if (
       !(
-        state.operation &&
-        (event.target.innerText === "+" ||
-          event.target.innerText === "-" ||
-          event.target.innerText === "x" ||
-          event.target.innerText === "÷" ||
-          event.target.innerText === "%")
+        state.operation
+        && (event.target.innerText === '+'
+          || event.target.innerText === '-'
+          || event.target.innerText === 'x'
+          || event.target.innerText === '÷'
+          || event.target.innerText === '%')
       )
     ) {
       const obj = calculate(state, event.target.innerText);
       setState(obj);
       if (obj.total === null && obj.next === null && obj.operation === null) {
-        document.querySelector("input").value = "";
+        document.querySelector('input').value = '';
       }
     }
   };
@@ -33,7 +33,7 @@ const Calculator = () => {
   return (
     <div className="calculatorWrapper">
       <div className="calculatorText">
-        <h2>Let's do some math!</h2>
+        <h2>Let&apos;s do some math!</h2>
         <p>
           This is a simple basic calculator with memory functions similar to a
           small handheld calculator. Use this basic calculator for math with
