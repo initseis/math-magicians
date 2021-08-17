@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
-import calculate from '../logic/calculate';
-import operate from '../logic/operate';
+import React, { useState } from "react";
+import calculate from "../logic/calculate";
+import operate from "../logic/operate";
+import "./Calculator.css";
 
 const Calculator = () => {
   const [state, setState] = useState({
-    total: '',
+    total: "",
     next: null,
     operation: null,
   });
@@ -13,18 +14,18 @@ const Calculator = () => {
   const handleButton = (event) => {
     if (
       !(
-        state.operation
-        && (event.target.innerText === '+'
-          || event.target.innerText === '-'
-          || event.target.innerText === 'x'
-          || event.target.innerText === '÷'
-          || event.target.innerText === '%')
+        state.operation &&
+        (event.target.innerText === "+" ||
+          event.target.innerText === "-" ||
+          event.target.innerText === "x" ||
+          event.target.innerText === "÷" ||
+          event.target.innerText === "%")
       )
     ) {
       const obj = calculate(state, event.target.innerText);
       setState(obj);
       if (obj.total === null && obj.next === null && obj.operation === null) {
-        document.querySelector('input').value = '';
+        document.querySelector("input").value = "";
       }
     }
   };
