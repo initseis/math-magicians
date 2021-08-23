@@ -4,6 +4,11 @@
 
 ![screenshot](./src/img/app-screenshot.png)
 
+## Live Demo
+
+- [Netlify](https://sharp-varahamihira-88b276.netlify.app/)
+- [Heroku](https://tranquil-journey-31114.herokuapp.com/)
+
 ## Built With
 
 - React, HTML & CSS & JS & Jest & Webpack
