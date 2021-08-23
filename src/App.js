@@ -19,25 +19,25 @@ class App extends React.Component {
             </Link>
             <ul>
               <li>
-                <Link to="/math-magicians">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/math-magicians/calculator">Calculator</Link>
+                <Link to="/calculator">Calculator</Link>
               </li>
               <li>
-                <Link to="/math-magicians/quote">Quote</Link>
+                <Link to="/quote">Quote</Link>
               </li>
             </ul>
           </nav>
 
           <Switch>
-            <Route path="/math-magicians/calculator">
+            <Route path="/calculator">
               <Calculator />
             </Route>
-            <Route path="/math-magicians/quote">
+            <Route path="/quote">
               <Quote />
             </Route>
-            <Route exact path="/math-magicians">
+            <Route exact path="/">
               <Home />
             </Route>
           </Switch>
