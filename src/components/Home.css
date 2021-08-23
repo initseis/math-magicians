@@ -1,0 +1,13 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeContainer > p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+br {
+  margin-bottom: 1rem;
+}

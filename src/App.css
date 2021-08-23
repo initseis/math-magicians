@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Mukta, sans-serif;
+}
+
+.container {
+  padding: 1.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #f5913e;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li:not(:last-child) {
+  margin-right: 1rem;
+  padding-right: 1rem;
+  border-right: 3px solid #f5913e;
+}
+
+.divider {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #858694;
+}
+
+a:hover {
+  color: #f5913e;
+}
