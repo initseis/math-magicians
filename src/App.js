@@ -31,14 +31,14 @@ class App extends React.Component {
           </nav>
 
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
             <Route path="/calculator">
               <Calculator />
             </Route>
             <Route path="/quote">
               <Quote />
+            </Route>
+            <Route exact path="/">
+              <Home />
             </Route>
           </Switch>
         </div>
